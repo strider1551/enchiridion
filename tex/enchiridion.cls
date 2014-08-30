@@ -18,6 +18,10 @@
 
 \LoadClass[11pt,oneside,onecolumn]{memoir}
 	\chapterstyle{lyhne}
+    \makepagestyle{custom}
+    \makeevenfoot{custom}{}{\thepage}{}
+    \makeoddfoot{custom}{}{\thepage}{}
+    \pagestyle{custom}
 	
 \RequirePackage{geometry}
 \RequirePackage{indentfirst}
